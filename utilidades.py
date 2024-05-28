@@ -6,10 +6,10 @@ from streamlit_extras.stylable_container import stylable_container
 
 def leitura_de_dados():
     if not 'dados' in st.session_state:
-        # pasta_datasets = Path(__file__).parents[0] / 'datasets'
-        df_FWD=pd.read_excel('datasets/BASE_DADOS_FWD.xlsx', header=0)
-        df_IRI=pd.read_excel('datasets/BASE_DADOS_IRI.xlsx', header=0, sheet_name="BASE_DADOS_TRAT")
-        df_coord = pd.read_excel('datasets/COORDENADAS_DAS_ESTACAS.xlsx')
+        pasta_datasets = Path(__file__).parents[0] / 'datasets'
+        df_FWD=pd.read_excel(pasta_datasets/'/BASE_DADOS_FWD.xlsx', header=0)
+        df_IRI=pd.read_excel(pasta_datasets/'BASE_DADOS_IRI.xlsx', header=0, sheet_name="BASE_DADOS_TRAT")
+        df_coord = pd.read_excel(pasta_datasets/'COORDENADAS_DAS_ESTACAS.xlsx')
         dados = {'df_FWD': df_FWD,
                 'df_IRI': df_IRI,
                 'df_coor': df_coord}
