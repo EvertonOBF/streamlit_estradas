@@ -205,7 +205,7 @@ elif infor == "Índice de Irregularidade Internacional (IRI)":
         # ----------------------------- MAPA --------------------------------------------
         # Ler o arquivo Excel contendo as coordenadas
 
-        file_path = 'datasets\COORDENADAS_DAS_ESTACAS.xlsx'
+        file_path = 'datasets/COORDENADAS_DAS_ESTACAS.xlsx'
         xls = pd.ExcelFile(file_path)
 
         # Mostrar as abas no selectbox
