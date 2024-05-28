@@ -5,3 +5,4 @@ numpy
 streamlit-extras
 folium
 streamlit-folium
+openpyxl
